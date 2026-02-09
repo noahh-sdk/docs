@@ -1,3 +1,10 @@
+---
+layout: default
+title: Home
+nav_order: 1
+description: "The main page"
+permalink: /
+---
 
 # ![Noahh Logo](https://github.com/noahh-sdk.png?size=40) Noahh SDK
 
