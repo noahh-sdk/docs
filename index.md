@@ -3,7 +3,6 @@ layout: default
 title: Home
 nav_order: 1
 description: "The main page"
-permalink: /
 ---
 
 # ![Noahh Logo](https://github.com/noahh-sdk.png?size=40) Noahh SDK
@@ -16,7 +15,7 @@ If you need help using Noahh or would like to contribute, feel free to join our 
 
 ## Getting Started
 
-See [Installation](INSTALLATION.md) for instructions on how to install the Noahh SDK on your computer.
+See [Installation](/docs/installation) for instructions on how to install the Noahh SDK on your computer.
 
 ## Credits
 
