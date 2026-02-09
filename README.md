@@ -11,7 +11,7 @@ See [Installation](INSTALLATION.md) for instructions on how to install the Noahh
 
 Developed by
 
-    NoahBajsToa
+    NoahBajsToa | [Github](https://github.com/nipfswd)
 
 Using
 
