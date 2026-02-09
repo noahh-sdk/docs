@@ -17,6 +17,8 @@ If you need help using Noahh or would like to contribute, feel free to join our 
 
 See [Installation](/docs/installation) for instructions on how to install the Noahh SDK on your computer.
 
+See [Building](/docs/building) for instructions on how to build the Geode Loader + SDK from scratch on your computer.
+
 ## Credits
 
 Developed by
