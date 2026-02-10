@@ -19,13 +19,16 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout docs repo
+      uses: actions/checkout@v3
+      with:
         path: 'dist'
 
     # Clone Noahh repo
     - name: Checkout Noahh repo
       uses: actions/checkout@v3
       with:
-        repository: 'noahh-sdk/noahh'
+        repository: 'noahh-sdk/noahh
         path: 'noahh'
   
     - name: Run Doxygen
@@ -33,6 +36,10 @@ jobs:
       with:
         working_directory: 'noahh/loader/include/Noahh'
         doxyfile-path: 'dist/Doxyfile'
+    
+    - name: Debug
+      run: |
+        ls -l
 
     - name: Setup Pages
       uses: actions/configure-pages@v2
