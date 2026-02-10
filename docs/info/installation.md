@@ -41,12 +41,12 @@ The official Noahh installer is currently under heavy remodelling. It will be br
   * Unzip the download file somewhere, and [add the directory with noahh file to your user's PATH variable with .zshenv](https://stackoverflow.com/a/18077919). You need to restart your terminal after adding the directory to your path.
   * run `chmod +x path_to_noahh_executable` to make the file executable
 
-2. Navigate somewhere on your computer using the command line and do `git clone https://github.com/noahh-sdk/noahh --recursive`
+2. Run `noahh profile add --name ProfileName "/path/to/Geometry Dash.app/Contents"`, then `noahh sdk install "/path/to/install/noahh"`, or leave the path blank to install to default path `/Users/Shared/Noahh/sdk`
+
+3. Run `git submodule update --init --recursive` to pull th submodules
 
   * You may want to switch to the `ui` branch **if you're reading this document _before_ 2022/10/10**. Do this with `git checkout ui`
 
-3. Build Noahh yourself after missing MacOS addresses are added
-
-4. [Create a new Environment Variable with .zshenv named](https://apple.stackexchange.com/a/356455) `NOAHH_SDK` and make its value be the path to the `noahh` repository on your computer (Example: `/Users/Steve/Documents/noahh`)
+4. Build Noahh yourself after missing MacOS addresses are added
 
 5. All done :) See the [instructions for creating a mod](/docs/tutorial/creating.md) next
