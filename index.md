@@ -10,7 +10,7 @@ The main goal of Noahh is to **end mod incompatability**. Traditional modding le
 
 On top of this, and perhaps more interestingly, **Noahh provides much better ergonomics for modding**. Instead of having to deal with calling conventions, trampolines, manually setting hooks (likely in another source file), you can have all the code relevant to hooks in a [nice, clean, readable syntax](/tutorials/modify.md) contained within a single source file.
 
-See [What is Noahh](/info/whatisnoahh.md) for more detailed information about why you should use Noahh.
+See [What is Noahh](/whatisnoahh.md) for more detailed information about why you should use Noahh.
 
 ## Help, Contributing, Etc.
 
