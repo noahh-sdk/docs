@@ -16,6 +16,18 @@ The official Noahh installer is currently under heavy remodelling. It will be br
 
 4. Place the `noahh.loader` folder from `resources.zip` into `<Root Geometry Dash folder>/noahh/resources`
 
+## Manually (on MacOS)
+
+1. Download [the latest release](https://github.com/noahh-sdk/noahh/releases/latest) (download the `noahh-vX.X.X` zip for your respective platform and `resources.zip`)
+
+2. Rename `libfmod.dylib` inside `Contents/Frameworks` into `libfmod.dylib.original` if you ever need to uninstall Noahh
+
+3. Place the ZIP's contents to the `Contents/Frameworks` directory inside `Geometry Dash.app`
+
+4. Open the game once to make sure it works (if it doesn't, **whitelist the GD folder in your antivirus**)
+
+5. Place the `noahh.loader` folder from `resources.zip` into `Contents/noahh/resources`
+
 # Installing Noahh SDK (for Developers)
 
 ## Using the installer
