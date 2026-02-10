@@ -1,7 +1,7 @@
 ---
 layout: default
 title: How Noahh works
-nav_order: 1
+nav_order: 2
 description: "Fundamentals of Noahh"
 ---
 
