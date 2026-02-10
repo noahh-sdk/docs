@@ -91,7 +91,7 @@ class $modify(MyAwesomeModification, MenuLayer) {
 
 The syntax for this is `class $modify(MyClassName, ModifiedClassName)`. It looks cool.
 
-Creating a `CCMenuItemSpriteExtra` takes a `SEL_MenuHandler`, which is a type alias for `void(cocos2d::CCObject::*)(cocos2d::CCObject*)` (which means a pointer to a member function that has a single parameter of CCObject\*). In order to supply this we need to get access to our function address, which requires us to know the class name. When we don't supply a class name, the macro generates a class which is guaranteed to not create any collision problems.
+Creating a `CCMenuItemSpriteExtra` takes a `SEL_MenuHandler`, which is a type alias for `void(cocos2d::CCObject::*)(cocos2d::CCObject*)` (which means a pointer to a member function that has a single parameter of CCObject\*). In order to supply this we need to get access to our function address, which requires us to know the class name. When we don't supply a class name, the macro generates a class which is guaranteed to not create any collision problems. 
 
 ## Modifying destructors
 
@@ -240,7 +240,7 @@ class $modify(MyComplicatedClass, MenuLayer) {
 
 ## Adding new virtual functions
 
-We currently don't support this yet, but here is how you would do it anyway:
+We currently don't support this yet, but here is how you *would* do it anyway:
 
 ```cpp
 class $modify(CopyPlayerObject, PlayerObject) {
@@ -261,14 +261,27 @@ Not yet implemented
 
 # Common mistakes 
 
-Here are some common mistakes you (and us) may make:
+Here are some common mistakes you (and we) may make:
+
+## Accidental recursion
+
+```cpp
+class $modify(MenuLayer) {
+    void onMoreGames(CCObject* target) {
+        Log::get() << "MenuLayer::onMoreGames called woooo";
+        this->onMoreGames(target); // !!
+    }
+};
+```
+
+This will result in an infinite loop, because `this->` calls the $modified MenuLayer's `onMoreGames` instead of the original's. Name the class you're calling the function from instead.
 
 ## Accidental not recursion
 
 ```cpp
 class $modify(MenuLayer) {
     bool init() {
-        if (!this->init()) return false;
+        if (!this->init()) return false; // !!
 
         auto label = CCLabelBMFont::create("Hello world!", "bigFont.fnt");
         label->setPosition(100, 100);
@@ -279,22 +292,10 @@ class $modify(MenuLayer) {
 };
 ```
 
-This will not result in an infinite loop because `MenuLayer::init` is a virtual function, but please don't use it. It will confuse us all.
+This will not result in an infinite loop because `MenuLayer::init` is a virtual function, but please don't do `this->function`. It will confuse us all.
 
-## Accidental recursion
 
-```cpp
-class $modify(MenuLayer) {
-    void onMoreGames(CCObject* target) {
-        Log::get() << "MenuLayer::onMoreGames called woooo";
-        this->onMoreGames(target);
-    }
-};
-```
-
-This will result in an infinite loop.
-
-## Accidental not using the correct function
+## Accidentally not using the correct function
 
 ```cpp
 class $modify(MyBrokenClass, MenuLayer) {
@@ -324,11 +325,11 @@ class $modify(MyBrokenClass, MenuLayer) {
 
 This will result in the modification getting called twice when you press the newly created button, then the original function will be called.
 
-## Accidental not supplying the correct signature
+## Not supplying the correct signature
 
 ```cpp
 class $modify(MenuLayer) {
-    bool onMoreGames(CCObject* target) {
+    bool onMoreGames(CCObject* target) { // !!
         FLAlertLayer::create(
             "Noahh",
             "Hello World from my Custom Mod!",´
@@ -339,4 +340,4 @@ class $modify(MenuLayer) {
 };
 ```
 
-This will result in not modifying the intended function at all.
+This will result in not modifying the intended function at all, because `onMoreGames` is `void` in MenuLayer.
