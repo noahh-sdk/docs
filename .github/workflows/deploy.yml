@@ -32,7 +32,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           path: 'noahh/docs'
-
+      
       - name: Setup Ninja
         uses: seanmiddleditch/gha-setup-ninja@master
       
@@ -45,11 +45,14 @@ jobs:
           tarBall: false
           zipBall: false
           out-file-path: "" 
-        
-      - name: Build docs with Flash
+      
+      - name: Create dist directory
         run: |
           mkdir dist
           cd dist
+        
+      - name: Build docs with Flash
+        run: |
           ./../flash.exe -i ../noahh -o . 
 
       - name: Setup Pages
