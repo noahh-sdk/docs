@@ -43,4 +43,4 @@ Once done with your code, Press F1 to open the Command Palette and run `CMake: C
 
 8. Click `Build` on the bottom status bar or run `CMake: Build`
 
-9. If building was succesful, Noahh will automatically install the mod for your main GD installation. You can change where to install the mod to using the CLI command noahh config --cwi <index>, or install it manually by copying the resulting Noahh package in build/Release.
+9. If building was succesful, Noahh will automatically install the mod for your main GD installation. You can change where to install the mod to using the CLI command `noahh config --cwi <index>`, or install it manually by copying the resulting Noahh package in build/Release.
