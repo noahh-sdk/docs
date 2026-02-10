@@ -38,7 +38,8 @@ The official Noahh installer is currently under heavy remodelling. It will be br
 
 1. Install [Noahh CLI](https://github.com/noahh-sdk/cli/releases/latest)
 
-  * Unzip the download file somewhere, and [add the directory with noahh executable to your user's PATH variable with .zshenv](https://stackoverflow.com/a/18077919). You need to restart your terminal after adding the directory to your path.
+  * Unzip the download file somewhere, and [add the directory with noahh file to your user's PATH variable with .zshenv](https://stackoverflow.com/a/18077919). You need to restart your terminal after adding the directory to your path.
+  * run `chmod +x path_to_noahh_executable` to make the file executable
 
 2. Navigate somewhere on your computer using the command line and do `git clone https://github.com/noahh-sdk/noahh --recursive`
 
