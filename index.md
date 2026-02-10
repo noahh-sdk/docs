@@ -8,9 +8,9 @@
 
 The main goal of Noahh is to **end mod incompatability**. Traditional modding leads very easily to compatability problems, many of which Noahh attempts to address with better solutions.
 
-On top of this, and perhaps more interestingly, **Noahh provides much better ergonomics for modding**. Instead of having to deal with calling conventions, trampolines, manually setting hooks (likely in another source file), you can have all the code relevant to hooks in a [nice, clean, readable syntax](/docs/tutorials/modify.md) contained within a single source file.
+On top of this, and perhaps more interestingly, **Noahh provides much better ergonomics for modding**. Instead of having to deal with calling conventions, trampolines, manually setting hooks (likely in another source file), you can have all the code relevant to hooks in a [nice, clean, readable syntax](/tutorials/modify.md) contained within a single source file.
 
-See [What is Noahh](/docs/info/whatisnoahh.md) for more detailed information about why you should use Noahh.
+See [What is Noahh](/info/whatisnoahh.md) for more detailed information about why you should use Noahh.
 
 ## Help, Contributing, Etc.
 
@@ -18,19 +18,31 @@ If you need help using Noahh or would like to contribute, feel free to join our 
 
 ## Getting Started
 
-See [Installation](/docs/info/installation) for instructions on how to install the Noahh SDK on your computer.
+See [Installation](/info/installation) for instructions on how to install the Noahh SDK on your computer.
 
-See [Creating a new mod](/docs/info/creating.md) for instructions on how to make your first mod.
+See [Creating a new mod](/info/creating.md) for instructions on how to make your first mod.
 
-See [Building](/docs/source/building) for instructions on how to build the Noahh Loader + SDK from scratch on your computer.
+See [Building](/source/building) for instructions on how to build the Noahh Loader + SDK from scratch on your computer.
 
-See [Handbook](/docs/handbook/chap0) for a beginner-friendly tutorial series on using Noahh and GD Modding in general (WIP!!).
+See [Handbook](/handbook/chap0) for a beginner-friendly tutorial series on using Noahh and GD Modding in general (WIP!!).
 
 ## Credits
 
 Developed by
 
- * [NoahBajsToa](https://github.com/nipfswd/)
+ * [PoweredByPie](https://github.com/poweredbypie/)
+
+ * [Mat](https://github.com/matcool/)
+
+ * [HJfod](https://github.com/hjfod)
+
+ * [Camila314](https://github.com/camila314/)
+
+ * [Alk1m123](https://github.com/altalk23/)
+
+ * [FireCubez](https://github.com/FireCubez)
+
+ * [fig](https://github.com/FigmentBoy)
 
 Using
 

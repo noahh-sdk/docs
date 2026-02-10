@@ -49,3 +49,4 @@ The second thing to notice is that our variables have turned into **register ass
 
 The memory addresses of functions are **not constant** between different compilations; what this means in practice for GD mods is that **a mod that works for GD version 2.113 does not work for version 2.112 or 2.2**, as the memory addresses of the functions are completely different. However, they are constant within copies of the **same compiled binary**; if you find a function's address in the GD 2.113 binary, you can use that address in your mod and it will work for anyone with GD 2.113 installed.
 
+
