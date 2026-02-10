@@ -1,25 +1,17 @@
----
-layout: default
-title: Building
-parent: Loader Documentation
-description: "Building instructions"
-nav_exclude: true
----
-
 # Building
 
-These are instructions for building the [Noahh Loader](https://github.com/noahh-sdk/loader). For building your own mods, see [Getting Started](/docs/starting).
+These are instructions for building the [Noahh Loader](https://github.com/noahh-sdk/noahh). For building your own mods, see [Getting Started](/docs/starting).
 
 ### Prerequisites: 
 
  * [CMake](https://cmake.org/download/) (minimum v3.13.4)
  * A supported C++ compiler ([clang](https://releases.llvm.org/)/[MSVC](https://visualstudio.microsoft.com/downloads/))
- * [Noahh CLI](https://github.com/noahh-sdk/cli) (Highly Recommended)
- * [git](https://git-scm.com/downloads) (Highly Recommended)
+ * [Noahh CLI](https://github.com/noahh-sdk/cli)
+ * [git](https://git-scm.com/downloads)
 
 ### Quick instructions (for thigh-high programmers)
 
-1. `git clone --recursive https://github.com/noahh-sdk/loader.git`
+1. `git clone --recursive https://github.com/noahh-sdk/noahh.git`
 
 2. `cmake -B build -T host=x64 -A win32`
 
@@ -33,14 +25,15 @@ These are instructions for building the [Noahh Loader](https://github.com/noahh-
 
 3. Open up the command line and navigate to any directory where you'd like to build the loader
 
-4. `git clone https://github.com/noahh-sdk/loader --recurse-submodules`
+4. `git clone https://github.com/noahh-sdk/noahh --recurse-submodules`
 
 5. Open up the directory in VS Code
 
-Once done with your code, Press F1 to open the Command Palette and run `CMake: Configure` (make sure to select an x86 generator)
+6. Once done with your code, Press F1 to open the Command Palette and run `CMake: Configure` (make sure to select an x86 generator)
 
 7. Open up the Command Palette again and run `CMake: Select Variant` (select either `Release` or `RelWithDebInfo`). This may also be done through the bottom status bar. There should be a button that displays `Debug`. Click on this and change it to the option in the dropdown that displays `Release`
 
 8. Click `Build` on the bottom status bar or run `CMake: Build`
 
 9. If building was succesful, Noahh will automatically install the mod for your main GD installation. You can change where to install the mod to using the CLI command `noahh config --cwi <index>`, or install it manually by copying the resulting Noahh package in build/Release.
+

@@ -1,10 +1,3 @@
----
-layout: default
-title: Creating a New Mod
-parent: Getting Started
-nav_order: 3
-description: "How to set up and create a new mod using the Noahh CLI"
----
 # Creating a new Mod
 
 These are instructions to create an empty mod.
@@ -13,7 +6,7 @@ These are instructions to create an empty mod.
 
  * [CMake](https://cmake.org/download/) (minimum v3.13.4)
  * A supported C++ compiler ([clang](https://releases.llvm.org/)/[MSVC](https://visualstudio.microsoft.com/downloads/))
-* [Noahh CLI](https://github.com/noahh-sdk/cli) (Make sure you [add the CLI](/docs/installcli) to your path environment variable)
+ * [Noahh CLI](https://github.com/noahh-sdk/cli) (Make sure you [add the CLI](/docs/installcli) to your path environment variable)
  * [git](https://git-scm.com/downloads) (Highly Recommended)
 
 ### Development Guide
@@ -26,11 +19,11 @@ These are instructions to create an empty mod.
 
 4. Run `noahh new <name>` and follow the prompts that follow
 
-5. Open up the new directory inside VS Code
+5. Open up the new directory in VS Code
 
 6. Press F1 to open the Command Palette and run `CMake: Configure` (make sure to select an x86 generator)
 
-7. Open up the Comand Palette again and run `CMake: Select Variant` (select either `Release` or `RelWithDebInfo`)
+7. Open up the Command Palette again and run `CMake: Select Variant` (select either `Release` or `RelWithDebInfo`)
 
 Alternatively, you can run CMake manually without using VSCode or using another program (such as Sublime Text), however using the VSCode environment is highly recommended for Noahh projects.
 

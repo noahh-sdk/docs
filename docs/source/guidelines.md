@@ -1,11 +1,3 @@
----
-layout: default
-title: Modding Guidelines
-parent: Usage
-nav_order: 2
-description: "Modding Guidelines"
----
-
 # Modding Guidelines
 
 As Noahh is a framework meant first and foremost to provide a centralized and simple framework for mods, there are a few rules for modders that we request every modder to follow. These guidelines are meant to ensure compatability and a safe & enjoyable experience for end users.

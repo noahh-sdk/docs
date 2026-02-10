@@ -1,6 +1,6 @@
-![Geode Logo](https://github.com/geode-sdk.png?size=80) 
+![Noahh Logo](https://github.com/noahh-sdk.png?size=80) 
 
-# Geode SDK
+# Noahh SDK
 
 **Noahh** is a [Geometry Dash](https://store.steampowered.com/app/322170/Geometry_Dash/) mod loader and modding SDK with a modern approach towards mod development. Unlike previous mod loaders, which merely inject the DLLs and let devs handle the rest, Noahh aims to be a more comprehensive project, which manages loaded mods & hooks itself. Noahh has been built to ensure performance, compatibility, portability and ease of use. For devs, Noahh means easy development and portability; for end users, Noahh means an uniform and easy experience using mods.
 
@@ -12,22 +12,21 @@ Noahh is in many ways a **declarative framework**; you tell it what you want, no
 
 One of our main design goals with Noahh has been to make a framework so good that after using it once, you never want to go back.
 
-
 ## Help, Contributing, Etc.
 
 If you need help using Noahh or would like to contribute, feel free to join our [Discord Server](https://discord.gg/tHtRweqS6p).
 
 ## Getting Started
 
-See [Installation](/docs/installation) for instructions on how to install the Noahh SDK on your computer.
+See [Installation](/docs/info/installation) for instructions on how to install the Noahh SDK on your computer.
 
-See [Building](/docs/building) for instructions on how to build the Noahh Loader + SDK from scratch on your computer.
+See [Building](/docs/source/building) for instructions on how to build the Noahh Loader + SDK from scratch on your computer.
 
 ## Credits
 
 Developed by
 
-    NoahBajsToa | [Github](https://github.com/nipfswd)
+ * [NoahBajsToa](https://github.com/nipfswd/)
 
 Using
 
@@ -35,6 +34,8 @@ Using
 
  * [FMOD](https://www.fmod.com/)
 
+ * [fmt](https://fmt.dev/latest/index.html)
+
 Special Thanks
 
-* [RobTop Games](https://twitter.com/RobTopGames/) for making this amazing game and providing us and so many others with hours of entertainment ❤
+ * [RobTop Games](https://twitter.com/RobTopGames/) for making this amazing game and providing us and so many others with hours of entertainment ❤

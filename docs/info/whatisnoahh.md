@@ -1,11 +1,4 @@
----
-layout: default
-title: What is Noahh
-nav_order: 1
-description: "Explanation of Noahh"
----
-
-# What is Noah?
+# What is Noahh?
 
 ## In short, it is to GD what Forge / Fabric are to Minecraft.
 

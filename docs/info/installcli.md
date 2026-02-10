@@ -1,10 +1,3 @@
----
-layout: default
-title: Installing Noahh CLI
-nav_exclude: true
-description: "How to set up Noahh CLI"
----
-
 # Installing Noahh CLI
 
 Noahh CLI is the command-line interface for working with Noahh, intended mainly for developers. It comes with many important tools such as packaging mods into `.noahh` files, creating spritesheets, creating bitmap fonts, etc.. The CLI, if installed, will be automatically invoked by Noahh CMake files, so you likely won't need to use it a lot manually; however, for Noahh mod development, it is very much recommended to have it installed as you will have to manually create resources and `.noahh` files otherwise.
