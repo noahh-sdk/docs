@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
 
 jobs:
-    - name: Checkout docs repo
-      uses: actions/checkout@v3
-      with:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
         path: 'dist'
 
     # Clone Noahh repo
