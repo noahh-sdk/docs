@@ -1,4 +1,22 @@
-# Installing Noahh
+# Installing Noahh (for Users)
+
+> :warning: Please note that Noahh is **incompatible with all other mod loaders and mods**. We're porting stuff like MHv7 and BetterEdit over, but don't expect their old releases to work.
+
+## Using the installer
+
+The official Noahh installer is currently under heavy remodelling. It will be brought back here when it's ready :) For now, you will have to install the Noahh loader manually.
+
+## Manually (on Windows)
+
+1. Download [the latest release](https://github.com/noahh-sdk/noahh/releases/latest) (download the `noahh-vX.X.X` zip for your respective platform and `resources.zip`)
+
+2. Place the ZIP's contents to the root Geometry Dash directory (where `GeometryDash.exe` is)
+
+3. Open the game once to make sure it works (if it doesn't, **whitelist the GD folder in your antivirus**)
+
+4. Place the `noahh.loader` folder from `resources.zip` into `<Root Geometry Dash folder>/noahh/resources`
+
+# Installing Noahh SDK (for Developers)
 
 ## Using the installer
 
