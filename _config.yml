@@ -1,8 +1,0 @@
-remote_theme: pmarsceill/just-the-docs
-
-title: Noahh Docs
-color_scheme: dark
-
-aux_links:
-  "Noahh SDK on GitHub":
-    - "https://github.com/noahh-sdk"
