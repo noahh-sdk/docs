@@ -40,7 +40,7 @@ jobs:
     - name: Run Doxygen
       uses: mattnotmitt/doxygen-action@v1.9.5
       with:
-        working-directory: 'noahh/loader/include/Noahh'
+        working-directory: '${{ github.workspace }}/noahh/loader/include/Noahh'
         doxyfile-path: '${{ github.workspace }}/dist/Doxyfile'
     
     - name: Debug
