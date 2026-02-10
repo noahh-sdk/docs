@@ -49,7 +49,6 @@ jobs:
         run: |
           doxygen ${{ github.workspace }}/dist/Doxyfile
         working-directory: '${{ github.workspace }}/noahh/loader/include/Noahh'
-          working-directory: '${{ github.workspace }}/noahh/loader/include/Noahh'
 
       - name: Move generated docs
         run: |
