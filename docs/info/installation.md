@@ -12,19 +12,19 @@ The official Noahh installer is currently under heavy remodelling. It will be br
  * A supported C++ compiler ([clang](https://releases.llvm.org/)/[MSVC](https://visualstudio.microsoft.com/downloads/))
  * [git](https://git-scm.com/downloads)
 
-1. Install [Noahh CLI](https://github.com/noahh-sdk/cli/releases/latest)
+1. Install [Noahh CLI](https://github.com/noahh-sdk/cli/releases/latest) [(Instructons)](/docs/info/installcli.md)
 
   * Unzip the download file somewhere, and [add the directory with noahh.exe to your user's PATH variable](https://helpdeskgeek.com/windows-10/add-windows-path-environment-variable/). You may need to restart your command line after adding the directory to your path.
 
-2. Navigate somewhere on your computer using the command line and do `git clone https://github.com/noahh-sdk/noahh --recursive`
+2. Run `noahh config setup` from the command line to set up Noahh CLI
 
-  * You may want to switch to the `ui` branch **if you're reading this document _before_ 2022/10/10**. Do this with `git checkout ui`
+3. Navigate somewhere on your computer using the command line and do `git clone https://github.com/noahh-sdk/noahh --recursive`. **If you forget to clone recursively, do `git submodule update --init --recursive`**.
 
-3. Build Noahh yourself or ask HJfod for prebuilt binaries
+4. [Build Noahh yourself](/docs/source/building.md) or ask HJfod for prebuilt binaries
 
-4. [Create a new System Environment Variable](https://www.wikihow.com/Create-an-Environment-Variable-in-Windows-10) `NOAHH_SDK` and make its value be the path to the `noahh` repository on your computer (Example: `C:\Users\Steve\Documents\noahh`)
+5. [Create a new System Environment Variable](https://www.wikihow.com/Create-an-Environment-Variable-in-Windows-10) `NOAHH_SDK` and make its value be the path to the `noahh` repository on your computer (Example: `C:\Users\Steve\Documents\noahh`)
 
-5. All done :) See the [instructions for creating a mod](/docs/tutorial/creating.md) next  
+6. All done :) See the [instructions for creating a mod](/docs/tutorial/creating.md) next  
 
 
 
