@@ -1,52 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
-  <style>
-    :root {
-      --mono-hue: 265;
-      --mono-saturation: 0%;
-      --mono-shade3: hsl(var(--mono-hue), var(--mono-saturation), 6%);
-      --mono-shade2: hsl(var(--mono-hue), var(--mono-saturation), 8%);
-      --mono-shade1: hsl(var(--mono-hue), var(--mono-saturation), 10%);
-      --mono-base:   hsl(var(--mono-hue), var(--mono-saturation), 12%);
-      --mono-tint1:  hsl(var(--mono-hue), var(--mono-saturation), 18%);
-      --mono-tint2:  hsl(var(--mono-hue), var(--mono-saturation), 28%);
-      --mono-tint3:  hsl(var(--mono-hue), var(--mono-saturation), 35%);
+![Noahh Logo](https://github.com/noahh-sdk.png?size=80) 
 
-      --theme-hue: 45;
-      --theme-saturation: 25%;
-      --theme-lightness: 50%;
+# Noahh SDK
 
-      --sidebar-nav-margin: 0px;
+**Noahh** is a [Geometry Dash](https://store.steampowered.com/app/322170/Geometry_Dash/) mod loader and modding SDK with a modern approach towards mod development. Unlike previous mod loaders, which merely inject the DLLs and let devs handle the rest, Noahh aims to be a more comprehensive project, which manages loaded mods & hooks itself. Noahh has been built to ensure performance, compatibility, portability and ease of use. For devs, Noahh means easy development and portability; for end users, Noahh means an uniform and easy experience using mods.
 
-      --heading-color: hsl(263, 5%, 100%);
-    }
-  </style>
-</head>
-<body>
-  <div id="app"></div>
-  <script defer>
-    window.$docsify = {
-      name: 'Noahh Documentation',
-      repo: 'https://github.com/noahh-sdk',
-      logo: 'https://github.com/noahh-sdk.png?size=70',
-      loadSidebar: 'navigation.md',
-      homepage: 'index.md',
-      subMaxLevel: 3,
-      sidebarDisplayLevel: 1
-    }
-  </script>
-  <!-- Docsify v4 -->
-  <script defer src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <!-- plugins -->
-  <!-- <script defer src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script> -->
-  <script defer src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-c.min.js"></script>
-  <script defer src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-cpp.min.js"></script>
-</body>
-</html>
+## Why Noahh?
+
+The main goal of Noahh is to **end mod incompatability**. Traditional modding leads very easily to compatability problems, many of which Noahh attempts to address with better solutions.
+
+On top of this, and perhaps more interestingly, **Noahh provides much better ergonomics for modding**. Instead of having to deal with calling conventions, trampolines, manually setting hooks (likely in another source file), you can have all the code relevant to hooks in a [nice, clean, readable syntax](/docs/tutorials/modify.md) contained within a single source file.
+
+See [What is Noahh](/docs/info/whatisnoahh.md) for more detailed information about why you should use Noahh.
+
+## Help, Contributing, Etc.
+
+If you need help using Noahh or would like to contribute, feel free to join our [Discord Server](https://discord.gg/9e43WMKzhp).
+
+## Getting Started
+
+See [Installation](/docs/info/installation) for instructions on how to install the Noahh SDK on your computer.
+
+See [Creating a new mod](/docs/info/creating.md) for instructions on how to make your first mod.
+
+See [Building](/docs/source/building) for instructions on how to build the Noahh Loader + SDK from scratch on your computer.
+
+See [Handbook](/docs/handbook/chap0) for a beginner-friendly tutorial series on using Noahh and GD Modding in general (WIP!!).
+
+## Credits
+
+Developed by
+
+ * [NoahBajsToa](https://github.com/nipfswd/)
+
+Using
+
+ * [Cocos2d-x](https://github.com/cocos2d/cocos2d-x/tree/cocos2d-x-2.2.3)
+
+ * [FMOD](https://www.fmod.com/)
+
+ * [fmt](https://fmt.dev/latest/index.html)
+
+Special Thanks
+
+ * [RobTop Games](https://twitter.com/RobTopGames/) for making this amazing game and providing us and so many others with hours of entertainment ❤
