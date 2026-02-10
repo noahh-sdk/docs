@@ -231,7 +231,7 @@ class $modify(MyComplicatedClass, MenuLayer) {
     void onMoreGames(CCObject* target) {
         FLAlertLayer::create(
             "Noahh",
-            "Your text is: " this->*myString,
+            "Your text is: " + this->*myString,
             "OK"
         )->show(); 
     }
