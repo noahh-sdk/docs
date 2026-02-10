@@ -6,15 +6,15 @@
 
 ## Why Noahh?
 
-Noahh is a framework designed specifically for making Geometry Dash mods. It comes with an easy-to-use syntactically sugary hooking system where you don't have to manually input any addresses or deal with calling conventions.
+The main goal of Noahh is to **end mod incompatability**. Traditional modding leads very easily to compatability problems, many of which Noahh attempts to address with better solutions.
 
-Noahh is in many ways a **declarative framework**; you tell it what you want, not how to accomplish it. Noahh has been built to let modders focus on what mod they want to make, not how exactly to build it. To this end, it handles things like settings, node placement, keybinds, etc..
+On top of this, and perhaps more interestingly, **Noahh provides much better ergonomics for modding**. Instead of having to deal with calling conventions, trampolines, manually setting hooks (likely in another source file), you can have all the code relevant to hooks in a [nice, clean, readable syntax](/docs/tutorials/modify.md) contained within a single source file.
 
-One of our main design goals with Noahh has been to make a framework so good that after using it once, you never want to go back.
+See [What is Noahh](/docs/info/whatisnoahh.md) for more detailed information about why you should use Noahh.
 
 ## Help, Contributing, Etc.
 
-If you need help using Noahh or would like to contribute, feel free to join our [Discord Server](https://discord.gg/tHtRweqS6p).
+If you need help using Noahh or would like to contribute, feel free to join our [Discord Server](https://discord.gg/9e43WMKzhp).
 
 ## Getting Started
 
