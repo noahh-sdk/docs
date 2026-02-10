@@ -1,6 +1,7 @@
 
  * [Home](/)
  * [What is Noahh?](/docs/info/whatisnoahh.md)
+ * [What is Noahh?](/docs/info/installation.md)
 
  * About Noahh
 
