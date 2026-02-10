@@ -50,6 +50,8 @@ The official Noahh installer is currently under heavy remodelling. It will be br
 
 4. Run `noahh sdk install` to install the SDK (You can provide an argument to `noahh sdk install <path>` if you want to install somewhere other than the default path)
 
+  * The installation should automatically set the `NOAHH_SDK` environment variable to point to the SDK on Windows, but if it doesn't, **you should set it yourself**. You may want to restart your terminal, editors, and possibly computer after setting it.
+
 5. Run `noahh sdk install-binaries` to install prebuilt binaries, or [build Noahh yourself](/docs/source/building.md)
 
   * You can pick whether you want the `nightly` or `stable` branch of Noahh. `nightly` is the tip of the `main` branch, and contains all of the latest and greatest features but may also feature crashes and possibly not even compile, whereas `stable` is the latest released version. Use `noahh sdk update nightly` or `noahh sdk update stable` to switch between the two branches.
