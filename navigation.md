@@ -17,6 +17,7 @@
  * Handbook (WIP)
 
    * [Introduction](/docs/handbook/chap0.md)
+
    * Volume 1: The Basics
      * [Chapter 1.1: What is a Mod?](/docs/handbook/chap1_1.md)
      * [Chapter 1.2: Hooking & Patching](/docs/handbook/chap1_2.md)
@@ -42,5 +43,6 @@
    * [Contributing](/docs/source/contributing.md)
    * [Style guidelines](/docs/source/styling.md)
    * [Modding guidelines](/docs/source/guidelines.md)
+   * [Index review guidelines](/docs/info/indexrules.md)
 
  * Reference
