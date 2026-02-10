@@ -4,6 +4,24 @@
 
 Noahh is a **modding SDK** and **mod loader**. It contains a suite of tools that make developing mods fast and easy, and also has the actual loader for using those mods.
 
+## What does this mean for players?
+
+### Noahh makes installing mods simple
+
+No more need to drag weird .DLL files to barely documented folders, or figuring out what a `settings.txt` file is. **Installing a mod in Noahh is as simple as clicking an "Install" button in-game**. Even installing the loader itself is done through a simple [GUI installer](https://github.com/noahh-sdk/installer) that manages the installation process for you.
+
+### Noahh replaces other mod loaders
+
+Noahh fully manages all the mods it loads, and as such is **incompatible with all other mod loaders and mods**. You can't use something like **QuickLdr** or **MHv7 extensions** (Mega Hack itself will be ported over though) alongside Noahh.
+
+### What about non-Noahh mods?
+
+Mods made using traditional methods, such as GD Hacker Mode or BetterEdit v4 are unfortunately **never going to be supported** by Noahh. Noahh does not, and frankly, **can not support other mod loaders**. This is because doing so would be fully at odds with what Noahh aims to do; if you let mods create hooks using their own methods, traverse the node tree as they wish and handle saving settings and data manually, **you will end up with the same incompatability issues you started with**. Noahh will never be able to load arbitary .DLLs, because doing so simply does not make sense.
+
+Of course, this would be quite unhelpful for end users, so **we're doing our best to get as many mods ported to Noahh as possible**. BetterEdit, MegaHack v7, ReplayBot, TextureLdr, Run Info and many others **will be ported as Noahh mods**, and ones that aren't will be receiving **alternatives** (for example, an alternative to Sai Mod Pack is planned very soon). If there's a mod you'd like to see ported to Noahh, [let us know](https://discord.gg/9e43WMKzhp).
+
+## What this means for modders
+
 ### Noahh replaces MinHook and gd.h
 
 Noahh acts as replacement for the popular [MinHook](https://github.com/TsudaKageyu/minhook), [gd.h](https://github.com/hjfod/gd.h) and [cocos-headers](https://github.com/HJfod/cocos-headers) toolkit that forms the base for **traditional modding**. Noahh comes with its own hooking system, its own Cocos2d headers and its own GD bindings. The main goals of Noahh is to **make modding simpler** and to **fix mod incompatability**. For users, Noahh replaces traditional mod loaders like Mega Hack v7's extensions folder or QuickLdr.
@@ -33,12 +51,6 @@ In traditional modding, what do you do if two mods modify the same layer? Someti
 To solve these problems, the most major thing Noahh introduces is **IDs**. Every mod in Noahh has an ID, like `noahh.loader` or `hjfod.betteredit`. Checking if another mod is loaded is as simple as querying the loader: `Loader::get()->isModLoaded("mod.id")`. If your mod becomes incompatible with another, Noahh comes with the tooling to fix that with as little code as possible.
 
 On top of this, Noahh also addresses a lot of the sources of incompatability like nodes being added to the wrong places. [Noahh comes with string IDs and (soon) automatic layouting tools](/docs/tutorials/nodetree.md), which make writing code that is hard to break very simple. One of the leading philosophies of Noahh is that a mod that simply modifies the look of an UI and another that simply adds some buttons into existing menus should **always be compatible**.
-
-### What about non-Noahh mods?
-
-Mods made using traditional methods, such as GD Hacker Mode or BetterEdit v4 are unfortunately **never going to be supported** by Noahh. Noahh does not, and frankly, **can not support other mod loaders**. This is because doing so would be fully at odds with what Noahh aims to do; if you let mods create hooks using their own methods, traverse the node tree as they wish and handle saving settings and data manually, **you will end up with the same incompatability issues you started with**. Noahh will never be able to load arbitary .DLLs, because doing so simply does not make sense.
-
-Of course, this would be quite unhelpful for end users, so **we're doing our best to get as many mods ported to Noahh as possible**. BetterEdit, MegaHack v7, ReplayBot, TextureLdr, Run Info and many others **will be ported as Noahh mods**, and ones that aren't will be receiving **alternatives** (for example, an alternative to Sai Mod Pack is planned very soon). If there's a mod you'd like to see ported to Noahh, [let us know](https://discord.gg/tHtRweqS6p).
 
 ### And, well, it's free.
 
