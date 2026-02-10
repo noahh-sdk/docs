@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Installing Noahh CLI
-parent: Getting Started
-nav_order: 1
+nav_exclude: true
 description: "How to set up Noahh CLI"
 ---
 
