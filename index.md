@@ -20,7 +20,11 @@ If you need help using Noahh or would like to contribute, feel free to join our 
 
 See [Installation](/docs/info/installation) for instructions on how to install the Noahh SDK on your computer.
 
+See [Creating a new mod](/docs/info/creating.md) for instructions on how to make your first mod.
+
 See [Building](/docs/source/building) for instructions on how to build the Noahh Loader + SDK from scratch on your computer.
+
+See [Handbook](/docs/handbook/chap0) for a beginner-friendly tutorial series on using Noahh and GD Modding in general (WIP!!).
 
 ## Credits
 

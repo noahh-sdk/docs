@@ -6,7 +6,7 @@ These are instructions to create an empty mod.
 
  * [CMake](https://cmake.org/download/) (minimum v3.13.4)
  * A supported C++ compiler ([clang](https://releases.llvm.org/)/[MSVC](https://visualstudio.microsoft.com/downloads/))
- * [Noahh CLI](https://github.com/noahh-sdk/cli) (Make sure you [add the CLI](/docs/installcli) to your path environment variable)
+ * [Noahh CLI](https://github.com/noahh-sdk/cli) (Make sure you [add the CLI](/docs/info/installcli) to your path environment variable)
  * [git](https://git-scm.com/downloads) (Highly Recommended)
 
 ### Development Guide
@@ -25,7 +25,6 @@ These are instructions to create an empty mod.
 
 7. Open up the Command Palette again and run `CMake: Select Variant` (select either `Release` or `RelWithDebInfo`)
 
-> :warning: If you built the `ui` branch from source, you may need to change the `set(NOAHH_LINK_SOURCE On)` line in `CMakeLists.txt` to `set(NOAHH_LINK_NIGHTLY On)`.
 
 Alternatively, you can run CMake manually without using VSCode or using another program (such as Sublime Text), however using the VSCode environment is highly recommended for Noahh projects.
 

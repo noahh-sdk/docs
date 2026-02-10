@@ -42,7 +42,7 @@ The official Noahh installer is currently under heavy remodelling. It will be br
 
 5. [Create a new System Environment Variable](https://www.wikihow.com/Create-an-Environment-Variable-in-Windows-10) `NOAHH_SDK` and make its value be the path to the `noahh` repository on your computer (Example: `C:\Users\Steve\Documents\noahh`)
 
-6. All done :) See the [instructions for creating a mod](/docs/tutorial/creating.md) next  
+6. All done :) See the [instructions for creating a mod](/docs/info/creating.md) next  
 
 
 
@@ -67,4 +67,4 @@ The official Noahh installer is currently under heavy remodelling. It will be br
 
 4. Build Noahh yourself after missing MacOS addresses are added
 
-5. All done :) See the [instructions for creating a mod](/docs/tutorial/creating.md) next
+5. All done :) See the [instructions for creating a mod](/docs/info/creating.md) next
