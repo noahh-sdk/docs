@@ -4,13 +4,17 @@ icon: download
 description: Instructions for installing Noahh
 ---
 
-# Installing Noahh (for Users)
+# Installing Noahh
+
+## For Users
 
 > :warning: Please note that Noahh is **incompatible with all other mod loaders and mods**. We're porting stuff like Mega Hack and BetterEdit over, but don't expect their old releases to work.
 
 Noahh is installed using **its own installer**. You can find the latest version [on the Noahh homepage](https://noahh-sdk.org) or [on GitHub](https://github.com/noahh-sdk/installer/releases/latest).
 
-# Installing Noahh SDK (for Developers)
+Noahh is currently available on **Windows** and **MacOS**; Android and iOS support is planned in the future.
+
+## Installing Noahh SDK (for Developers)
 
 ### Prerequisites
 

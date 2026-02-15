@@ -1,5 +1,5 @@
 ---
-title: How to Use Noahh
+title: Using Noahh
 icon: play
 ---
 
@@ -19,7 +19,7 @@ Of course, there has to be something to load the mods, and for that there is the
 
 ## 3. Codegen & Headers
 
-As Noahh's goal is to be cross-platform, its set of GD headers has to be carefully crafted to include definitions for all platforms. For this reason, Noahh uses codegen to generate its headers. Another benefit of this is that if Noahh is missing a function you need, **adding new bindings is really easy** - you just have to add it to [your local copy of Noahh's GeometryDash.bro](https://github.com/noahh-sdk/noahh/blob/main/bindings/GeometryDash.bro) - the file Noahh uses to codegen all of its GD bindings.
+As Noahh's goal is to be cross-platform, its set of GD headers has to be carefully crafted to include definitions for all platforms. For this reason, Noahh uses codegen to generate its headers. Another benefit of this is that if Noahh is missing a function you need, **adding new bindings is really easy** - you just have to add it to [your local copy of Noahh's GeometryDash.bro](https://github.com/noahh-sdk/noahh/blob/main/bindings/GeometryDash.bro), the file Noahh uses to codegen all of its GD bindings.
 
 ## 4. CLI
 
