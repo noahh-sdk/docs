@@ -4,7 +4,8 @@ order: 3
 ---
 
 # Noahh CLI
-The Noahh SDK has its own command line utility program to aid in many tasks involved in mod, such as asset packing, font generation, managing the SDK, etc.
+
+Noahh has its own CLI tool to aid in many tasks involved in making mods, such as packing assets, generating fonts, managing installed SDK versions, etc.. While it is technically possible to use Noahh without the CLI, there is little reason not to install it as **it's required for nearly everything in practice**.
 
 # Installation
 
@@ -14,37 +15,35 @@ The Noahh SDK has its own command line utility program to aid in many tasks invo
 
 ## Windows
 
-### scoop
-You can use [scoop](https://scoop.sh/) to easily install the cli by doing:
+### Scoop
+
+You can use [Scoop](https://scoop.sh/) to easily install the CLI by doing:
 ```bash
 scoop bucket add extras
 scoop install noahh-sdk-cli
 ```
-In the future you can easily update the cli by doing:
+Later on, you can easily update the Noahh CLI by doing:
 ```bash
 scoop update noahh-sdk-cli
 ```
 
-If you don't have scoop, you can follow the installation instructions on their page:
-[https://scoop.sh](https://scoop.sh)
-
 ### winget
-We are also on [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/), so to install the cli you can do:
+
+If you prefer, you can also use [WinGet](https://learn.microsoft.com/en-us/windows/package-manager/winget/):
 ```bash
 winget install NoahhSDK.NoahhCLI
 ```
-In the future you can easily update the cli by doing:
+To update the CLI, run:
 ```bash
 winget upgrade NoahhSDK.NoahhCLI
 ```
 
-
 ---
 
-(Not Recommended :c) Otherwise, you can manually install it by:
-1. Download the latest windows release over at [GitHub](https://github.com/noahh-sdk/cli/releases/latest)
-1. Extract the `noahh.exe` into some folder on your computer
-1. Select the CLI executable in File Explorer, Shift + Right-Click it and select `Copy as Path`
+**(Not Recommended!)** Otherwise, you can manually install the Noahh CLI by:
+1. Download the latest Windows release over on [GitHub](https://github.com/noahh-sdk/cli/releases/latest)
+1. Extract `noahh.exe` into some folder on your computer
+1. Select the executable in File Explorer, Shift + Right-Click it and select `Copy as Path`
 1. Search `Edit the system environment variables` on Windows search. Alternatively, you can open up Control Panel and search for it, then select `Edit the system environment variables` or **to skip straight to step 6 select `Edit environment variables for your account`**.
 1. Click `Environment Variables...`
 1. In the top `User variables` section, select the `Path` variable and click `Edit`
@@ -53,31 +52,27 @@ winget upgrade NoahhSDK.NoahhCLI
 
 ---
 
-After either way of installing it, you should now be able to run `noahh --version` in your cmd and see a version number!
+After installing the CLI, you should now be able to run `noahh --version` in your command line and see a version number! (If this doesn't work, try restarting your terminal and/or computer.)
 
-It is recommended that you [set up a profile now](#profile-setup).
+It is recommended that you [set up a profile afterwards](#profile-setup).
 
 ## MacOS
 
-You can easily install the CLI via [brew](https://brew.sh)
+You can easily install the CLI via [Brew](https://brew.sh)
 ```bash
 brew install noahh-sdk/noahh/noahh-cli
 ```
 
-It is recommended that you [set up a profile now](#profile-setup).
+It is recommended that you [set up a profile afterwards](#profile-setup).
 
 ## Linux
 
-We provide prebuilt linux binaries in the CLI releases page, which you can find here: \
-[https://github.com/noahh-sdk/cli/releases/latest](https://github.com/noahh-sdk/cli/releases/latest)
+We provide prebuilt Linux binaries in [the CLI releases page]((https://github.com/noahh-sdk/cli/releases/latest)). Since Linux distros differ between each other, you need to figure out yourself how to add this binary to your global path so CMake can find it. As long as `noahh --version` works anywhere, everything should be fine.
 
-Since this is different per distro, you must figure out how to add this binary to your path for CMake to find it.
-
-Once you figure that out, it is recommended that you [set up a profile now](#profile-setup).
-
+Once you figure that out, it is recommended that you [set up a profile afterwards](#profile-setup).
 
 # Profile Setup
 
-A profile is just an instance of Geometry Dash. It's a good idea to set up one up for CLI so your mods can be automatically installed post build.
+A profile is just an instance of Geometry Dash. The CLI allows keeping multiple separate installations of Geometry Dash at once, though most users will just have a single installation of GD with Noahh on it. If you do have GDPSes with Noahh on them installed, you can run `noahh profile add` to add them to the list of known profiles. You need to have at least one profile set up so your mods can be automatically installed post build.
 
 To setup a new profile, simply run the `noahh config setup` command on your terminal.
