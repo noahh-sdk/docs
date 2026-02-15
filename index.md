@@ -18,7 +18,7 @@ If you need help using Noahh or would like to contribute, feel free to join our 
 
 ## Getting Started
 
-See [Installation](/info/installation) for instructions on how to install the Noahh SDK on your computer.
+See [Installation](/installation) for instructions on how to install the Noahh SDK on your computer.
 
 See [Creating a new mod](/info/creating.md) for instructions on how to make your first mod.
 
@@ -28,30 +28,19 @@ See [Handbook](/handbook/chap0) for a beginner-friendly tutorial series on using
 
 ## Credits
 
-Developed by
+### Contributors
 
- * [PoweredByPie](https://github.com/poweredbypie/)
+<a href="https://github.com/noahh-sdk/noahh/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=geode-sdk/geode" />
+</a>
 
- * [Mat](https://github.com/matcool/)
-
- * [HJfod](https://github.com/hjfod)
-
- * [Camila314](https://github.com/camila314/)
-
- * [Alk1m123](https://github.com/altalk23/)
-
- * [FireCubez](https://github.com/FireCubez)
-
- * [fig](https://github.com/FigmentBoy)
-
-Using
+### Libraries
 
  * [Cocos2d-x](https://github.com/cocos2d/cocos2d-x/tree/cocos2d-x-2.2.3)
-
  * [FMOD](https://www.fmod.com/)
-
  * [fmt](https://fmt.dev/latest/index.html)
 
-Special Thanks
+### Special Thanks
 
+ * [NachoBIT](https://github.com/TheNachoBIT)
  * [RobTop Games](https://twitter.com/RobTopGames/) for making this amazing game and providing us and so many others with hours of entertainment ❤
