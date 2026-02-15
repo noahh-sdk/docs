@@ -1,3 +1,8 @@
+---
+icon: help-circle
+description: An explanation of what Noahh is
+---
+
 # What is Noahh?
 
 ## In short, it is to GD what Forge / Fabric are to Minecraft.

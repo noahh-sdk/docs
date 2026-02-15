@@ -1,3 +1,9 @@
+---
+title: Installation
+icon: download
+description: Instructions for installing Noahh
+---
+
 # Installing Noahh (for Users)
 
 > :warning: Please note that Noahh is **incompatible with all other mod loaders and mods**. We're porting stuff like Mega Hack and BetterEdit over, but don't expect their old releases to work.

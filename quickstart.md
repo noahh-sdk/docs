@@ -1,3 +1,7 @@
+---
+icon: play
+---
+
 # Quick Start for Using Noahh to Make Mods
 
 1. [Install Noahh SDK](/installation)
