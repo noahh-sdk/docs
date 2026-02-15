@@ -6,7 +6,7 @@ icon: play
 
 1. [Install Noahh SDK](/installation)
 
-2. [Install Noahh CLI](/installcli)
+2. [Install Noahh CLI](/noahh/installcli)
 
 3. [Install Noahh VS Code extension](https://marketplace.visualstudio.com/items?itemName=NoahhSDK.noahh)
 
