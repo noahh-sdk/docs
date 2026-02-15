@@ -76,7 +76,8 @@ The setup is very similar to [VSCode on Mac](#vscode-on-mac), so you can follow 
     "toolchainFile": "${userHome}/.local/share/Noahh/cross-tools/clang-msvc-sdk/clang-msvc.cmake",
     "cmakeSettings": {
         "HOST_ARCH": "x86_64",
-        "SPLAT_DIR": "${userHome}/.local/share/Noahh/cross-tools/splat"
+        "SPLAT_DIR": "${userHome}/.local/share/Noahh/cross-tools/splat",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": 1
     }
 }
 ```
