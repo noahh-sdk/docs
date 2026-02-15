@@ -10,11 +10,12 @@ If you're using VS Code, you should [install the Noahh VS Code extension](https:
 
 ## Required settings
 
-There are 5 required properties for every mod: the target Noahh version, the ID and name of the mod, its developer, and its version.
+There are 6 required properties for every mod: the target Noahh version, the ID and name of the mod, its developer, and its version.
 
 ```json
 {
     "noahh": "v1.0.0",
+    "gd": "2.200",
     "id": "my.awesome-mod",
     "name": "My Awesome Mod",
     "version": "v1.0.0",
@@ -27,6 +28,33 @@ There are 5 required properties for every mod: the target Noahh version, the ID 
 ### `noahh`
 
 The target Noahh version. Should be in the format of an exact version, such as `v1.0.0` or `v1.2.0`. The target version should always be the exact version of Noahh you are developing with.
+
+### `gd`
+
+The target Geometry Dash version exactly, or `*` for **any** GD version (whether your mod actually works on any GD version is your responsibility.) 
+
+This key can either be a string, or an object for specifying per platform GD version:
+```json
+{
+    "gd": "2.204"
+}
+```
+or
+```json
+{
+    "gd": {
+        "android": "2.200",
+        "win": "2.204"
+    }
+}
+```
+The valid platform keys are `win`, `mac`, `android` and `ios`.
+```json
+{
+    "gd": "*" // Mod works on any gd version
+}
+```
+
 
 ### `id`
 
@@ -42,7 +70,7 @@ The version of the mod; should follow [semver](https://semver.org), especially i
 
 ### `developer`
 
-The name of the mod's developer. Should be a single name, like "Noahh" or "Alk". If the mod has multiple developers, this should be a team name like "Noahh Team".
+The name of the mod's developer. Should be a single name, like "HJfod" or "Alk". If the mod has multiple developers, this should be a team name like "Noahh Team".
 
 ### `description`
 
@@ -56,7 +84,7 @@ The Git repository of the mod.
 
 Describes where users can report problems with the mod. Value is an object with the following properties:
 
-* `info` - Free-form description of where / whom to report issues to
+ * `info` - Free-form description of where / whom to report issues to
 
  * `url` - URL to a Discord server, GitHub repository etc. where the issues are reported
 
