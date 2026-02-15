@@ -2,7 +2,7 @@
 
 ### [Visit the Docs site](https://docs.noahh-sdk.org)
 
-This is the source code for Noahh's docs, containg all the hand-written tutorials.
+This is the source code for Noahh's docs, containing all the hand-written tutorials.
 
 Class & function documentation is built automatically from [the Noahh source code](https://github.com/noahh-sdk/noahh).
 

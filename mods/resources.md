@@ -6,7 +6,7 @@ description: How to include resources in Noahh mods
 
 Noahh mods may include any number of resources/assets in the mod package. Noahh also provides utilities for automatically **generating spritesheets**, **turning TTF fonts to Bitmap ones**, and **creating Medium/Low versions of sprites**.
 
-In order for Noahh to create the resources, [you must have Noahh CLI installed](/info/installcli.md).
+In order for Noahh to create the resources, [you must have Noahh CLI installed](/noahh/installcli).
 
 ## Adding sprites
 

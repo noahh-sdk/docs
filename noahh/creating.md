@@ -6,7 +6,7 @@ These are instructions to create an empty mod.
 
  * [CMake](https://cmake.org/download/) (minimum v3.13.4)
  * A supported C++ compiler ([clang](https://releases.llvm.org/)/[MSVC](https://visualstudio.microsoft.com/downloads/))
- * [Noahh CLI](https://github.com/noahh-sdk/cli) (Make sure you [add the CLI](/info/installcli) to your path environment variable)
+ * [Noahh CLI](https://github.com/noahh-sdk/cli) (Make sure you [add the CLI](/noahh/installcli) to your path environment variable)
  * [git](https://git-scm.com/downloads) (Highly Recommended)
 
 ## Development Guide
