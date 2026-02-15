@@ -1,6 +1,7 @@
 # Migrating from Noahh v3.x to v4.0
 
 ## Changes to `Result`
+[Link to the full docs](https://github.com/noahh-sdk/result?tab=readme-ov-file#result)
 * Result type has been rewritten from scratch, and it is now shared with many parts of the Noahh codebase (Noahh itself, TulipHook and matjson).
 * Many methods removed or renamed:
     * `value()` -> `unwrap()`
@@ -56,8 +57,14 @@ static Result<std::shared_ptr<SettingV3>> parse(std::string const&, std::string 
 * No longer in cocos2d namespace
     * Can now be found in `Noahh/ui/Layout.hpp`
 
+## Changes to `getChildOfType`
+* Deprecated in 3.9.0, and now removed, use `CCNode::getChildByType<T>(int index)` instead:
+* `getChildOfType<CCLayer>(node, 1)` -> `node->getChildByType<CCLayer*>(1)`
+* You can use this regex pattern to quickly find and replace:
+   * `getChildOfType<(.+?)>\((.+?),\s*(.+?)\)` and replace with `$2->getChildByType<$1>($3)`
+
 ## Changes to `matjson`
-[Link to the full docs](https://github.com/noahh-sdk/json)
+[Link to the full docs](https://github.com/noahh-sdk/json?tab=readme-ov-file#matjson)
 * Entire library rewritten to use `noahh::Result`
     * See result section for tips on how to use Noahh's Result class
 * Methods are now camel case to fit with rest of Noahh's codebase
