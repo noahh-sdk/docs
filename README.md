@@ -10,6 +10,25 @@ Class & function documentation is built automatically from [the Noahh source cod
 
 The docs are built using [Flash](https://github.com/nipfswd/flash). To build the docs, you need Flash, along with [CMake](https://cmake.org/install/) and [Clang](https://clang.llvm.org/).
 
+To build the docs, you first need to clone Noahh, and then clone the docs inside the Noahh root, for a folder structure like this:
+
+```
+noahh/
+    docs/
+        <docs files>
+    <noahh files>
+```
+
+For example, you can do this with the following commands:
+
+```
+git clone https://github.com/noahh-sdk/noahh
+cd noahh
+git clone https://github.com/noahh-sdk/docs
+```
+
+Alternatively, you can symlink your local copy of the docs folder to your local copy of the Noahh folder.
+
 After building Flash from source using Cargo or installing the latest release, you can build the docs with the following command:
 
 ```
