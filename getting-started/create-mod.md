@@ -71,3 +71,17 @@ You can then copy the built .noahh file from the `build-android64` folder to you
 ```
 /storage/emulated/0/Android/media/com.noahh.launcher/game/noahh/mods/
 ```
+
+## Building Windows mods on Linux
+
+If you have followed the steps earlier and installed all the required tools with `noahh sdk install-linux`, building should be as simple as on windows:
+
+```bash
+noahh build
+```
+
+If you have installed the Windows SDK and the toolchain in a different way, you will have to provide paths to them manually:
+
+```bash
+noahh build -- -DCMAKE_TOOLCHAIN_FILE=/path/to/clang-msvc-sdk/clang-msvc.cmake -DSPLAT_DIR=/path/to/splat
+```
