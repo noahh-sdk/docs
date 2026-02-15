@@ -1,6 +1,6 @@
 # Migrating your mods from the traditional
 
-As Noahh is currently imcompatible with traditional mods, migration of old mods is a must in order to use them with Noahh. This page shows how to do just that.
+As Noahh is currently incompatible with traditional mods, migration of old mods is a must in order to use them with Noahh. This page shows how to do just that.
 
 ## Migrating from gd.h and cocos-headers
 
