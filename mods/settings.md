@@ -8,9 +8,11 @@ All settings have an associated key, or ID. This is the key of the settings obje
 
 > :information_source: Settings are intended for values the user can customize in-game. If you're looking for just saving some arbitary data in a quick cross-platform way, [see the tutorial for saving data](/mods/savedata.md).
 
-![An image showcasing the settings popup for the BetterEdit mod by NoahBajsToa](/assets/settings/popup.png)
+![An image showcasing the settings popup for the BetterEdit mod by HJfod](/assets/settings/popup.png)
 
 ## Using settings
+
+> :information_source: It is heavily recommended to have [the Noahh VS Code Extension](/getting-started/ide-setup) installed, as it gives you automatic code completion and checking for settings in `mod.json`.
 
 Adding new settings to your mod happens through `mod.json`. Define the `settings` key as an object and then list out the settings you want to have: 
 
@@ -64,6 +66,10 @@ auto myInt  = Mod::get()->template getSettingValue<int64_t>("my-int-setting");
 You can detect whenever the value of a setting is changed by using the [listenForSettingChanges] function. In most situations, you should call this function in an `$execute` block, so it gets enabled immediately when your mod is loaded. **The function will not be called on startup**, only when the value is changed afterwards. Note that the type you get the value as must match the value type of the setting type - if you are using a custom setting, make sure to specialize `noahh::SettingTypeForValueType<T>`.
 
 ```cpp
+#include <Noahh/loader/SettingV3.hpp>
+
+using namespace noahh::prelude;
+
 $execute {
     listenForSettingChanges("my-float-setting", [](double value) {
         // do something with the value
