@@ -16,6 +16,8 @@ See [What is Noahh](/whatisnoahh.md) for more detailed information about why you
 
 If you need help using Noahh or would like to contribute, feel free to join our [Discord Server](https://discord.gg/9e43WMKzhp).
 
+Alternatively, if you hate joining Discord servers to work with a framework, you can also just **open up an issue or pull request** on any [Noahh repository on Github](https://github.com/orgs/noahh-sdk/repositories).
+
 ## Getting Started
 
 See [Installation](/installation) for instructions on how to install the Noahh SDK on your computer.
