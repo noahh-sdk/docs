@@ -13,7 +13,7 @@ Example:
 ```cpp
 #include <Noahh/utils/fetch.hpp>
 
-USE_NOAHH_NAMESPACE();
+using namespace noahh::prelude;
 
 // download a- uh...
 auto res = web::fetch("https://pastebin.com/raw/vNi1WHNF");
@@ -37,8 +37,7 @@ Creating an async web request is really simple:
 ```cpp
 #include <Noahh/utils/fetch.hpp>
 
-USE_NOAHH_NAMESPACE();
-
+using namespace noahh::prelude;
 web::AsyncWebRequest()
     .fetch("https://pastebin.com/raw/vNi1WHNF")
     .text()
