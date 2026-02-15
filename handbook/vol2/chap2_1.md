@@ -6,7 +6,7 @@ Now, of course, it is obligatory to note that **there is no right or wrong way t
 
 ## Step 1: Concretize Your Idea
 
-**The first step is to really concretize your idea.** Often times, the ideas for the mods you want to make can be quite gradiose, like "I want to make GD more optimized" or "I want to make the editor better". Unfortunately, figuring out where to start actually working on the mod can prove to be a problem with large-scale ideas. In cases like these, you should try to **break the problem down into smaller parts**, like "I want to fix the scale controls in the editor being unable to rescale multiple objects at once" or "I want to add a 'Select by Group ID' button". Break down your idea into smaller parts, until you have something tangible you can actually start approaching.
+**The first step is to really concretize your idea.** Often times, the ideas for the mods you want to make can be quite grandiose, like "I want to make GD more optimized" or "I want to make the editor better". Unfortunately, figuring out where to start actually working on the mod can prove to be a problem with large-scale ideas. In cases like these, you should try to **break the problem down into smaller parts**, like "I want to fix the scale controls in the editor being unable to rescale multiple objects at once" or "I want to add a 'Select by Group ID' button". Break down your idea into smaller parts, until you have something tangible you can actually start approaching.
 
 ## Step 2: Reverse Engineer
 
@@ -14,7 +14,7 @@ After figuring out what it is that you are actually going for, it's time to look
 
 ## Step 3: Write Some Code
 
-Once you have an idea on what might be a route to achieving what you want, write some code to try it out. If you don't know the exact magic words to write, refer to documentation and [ask around for help](https://discord.gg/aKhJ7YyAk2).
+Once you have an idea on what might be a route to achieving what you want, write some code to try it out. If you don't know the exact magic words to write, refer to documentation and [ask around for help](https://discord.gg/aKhJ7YyAk2.
 
 ## Step 4: Test
 
