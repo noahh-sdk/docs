@@ -4,7 +4,7 @@ description: A complete tutorial for GD modding, directed at beginners
 
 # An Introduction to GD Modding (using Noahh)
 
-Hello everyone! This is **an introduction to GD Modding (using Noahh)**, a handbook that covers all of the essentials of GD Modding. To follow along with this handbook, you will need to have [**Noahh** installed](/installation.md). This handbook is written as a **tutorial for beginners**, though even if you are an experienced GD modder already, getting a fresh-up on the basics can never do harm. Even if for some reason you don't use Noahh, this handbook still contains **general information about modding and GD modding specifically**, however all practical code examples and the code project we will build later will use Noahh.
+Hello everyone! This is **an introduction to GD Modding (using Noahh)**, a handbook that covers all of the essentials of GD Modding. To follow along with this handbook, you will need to have [**Noahh** installed](/installation). This handbook is written as a **tutorial for beginners**, though even if you are an experienced GD modder already, getting a fresh-up on the basics can never do harm. Even if for some reason you don't use Noahh, this handbook still contains **general information about modding and GD modding specifically**, however all practical code examples and the code project we will build later will use Noahh.
 
 ## Prerequisites
 
