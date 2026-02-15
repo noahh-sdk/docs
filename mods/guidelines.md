@@ -43,7 +43,7 @@ A mod found breaking any of these rules will likely still be approved, although 
 These are some things one might expect to result in a rejection, but actually most likely won't.
 
  * The mod is **logically incompatible** with another mod on the index (for example, two mods that completely reshape `MenuLayer` in different ways are never going to be compatible)
- * The mod **looks bad**. We won't shame you for not having HJfod's UI skills
+ * The mod **looks bad**. We won't shame you for not having NoahBajsToa's UI skills
 
 ## Mods using Generative AI
 
