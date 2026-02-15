@@ -12,7 +12,7 @@ The Noahh SDK has its own command line utility program to aid in many tasks invo
 * [MacOS](#macos)
 
 ## Windows
-If you have [scoop](https://scoop.sh/) you can easily install the cli by doing:
+(Recommended) If you have [scoop](https://scoop.sh/) you can easily install the cli by doing:
 ```bash
 scoop install https://noahh-sdk.org/noahh-sdk-cli.json
 ```

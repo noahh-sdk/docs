@@ -32,8 +32,10 @@ You will need to manually update your local SDK every once in a while, which you
 noahh sdk update
 ```
 
-<!-- TODO: -->
-do you need to run install-binaries after this? i forgot
+Every time you update the SDK, you should update its prebuilt binaries too.
+```bash
+noahh sdk install-binaries
+```
 
 ---
 
