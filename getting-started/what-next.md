@@ -9,7 +9,7 @@ idk! Its difficult to guide you on what to do next, as you can do pretty much an
 
 ## Noahh Features
 
-Modding in Noahh is for the most part the same as traditional modding, however there are a few things where it differs. Here are a list of Noahh-specific concepts you might like to familiarize yourself with:
+Here are a list of Noahh-specific concepts you might like to familiarize yourself with:
 
  * [Hooking with `$modify`](/tutorials/modify.md) and [adding fields](/tutorials/fields.md)
  * [Using sprites and other resources](/mods/resources.md)
