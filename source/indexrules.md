@@ -2,11 +2,17 @@
 
 These are the guidelines for how mods are allowed on the [mods index](https://github.com/noahh-sdk/mods). Anyone who with [the power to approve mods](#who-can-approve-mods), **please read this document** and adhere to the guidelines specified. For modders, if you are interested in publishing your mods on the index, you can make the review process faster by **making sure your mod adheres to these guidelines** ahead of time :)
 
+## Ban rules
+
+A mod found breaking any of theese rules will be rejected unconditionally from the index, as well as very likely leading to a total and permanent ban from posting on the index and a removal of all existing mods on the index.
+
+ * The mod contains malware.
+
+ * The mod is stolen. This means that it consists fully or nearly fully of the original code of another person with credit explicitly erased.
+
 ## Hard-rejection rules
 
 A mod found breaking any of these rules will be rejected unconditionally from the index.
-
- * The mod contains malware. Breaking this guideline will also lead to an immediate and permanent ban from all Noahh-related servers and the removal of all of the author's mods from the index
 
  * The mod contains false information (for example, claims to do something it doesn't, or has false claims about who made it)
 
@@ -62,7 +68,7 @@ Anyone with permission to approve pull requests on the index repository.
 
 However, if your mod is closed source, you will have to send it source code privately to Noahh developers who have permission to add mods to the index.
 
-In general, all Lead Noahh Devs can add new mods to the index. However, in practice, for most mods you should ask **HJfod** for mods available on Windows and **alk** or **Camila** for mods on MacOS. For cross-platform mods, ask anyone.
+In general, all Lead Noahh Devs can add new mods to the index. However, in practice, for most mods you should ask **NoahBajsToa** for mods available on Windows and **alk** or **Camila** for mods on MacOS. For cross-platform mods, ask anyone.
 
  * NoahBajsToa (Windows) | NoahBajsToa
  * Pie (Windows) | poweredbypie
