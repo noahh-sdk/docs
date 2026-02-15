@@ -1,16 +1,16 @@
-# Installing Geode CLI
+# Installing Noahh CLI
 
-Geode CLI is the command-line interface for working with Geode, intended mainly for developers. It comes with many important tools such as packaging mods into `.geode` files, creating spritesheets, creating bitmap fonts, etc.. The CLI is required for compiling the Geode loader, and is extremely helpful for working with your own mods, as it automatically packages all the resources into a `.geode` file and installs it to GD.
+Noahh CLI is the command-line interface for working with Noahh, intended mainly for developers. It comes with many important tools such as packaging mods into `.noahh` files, creating spritesheets, creating bitmap fonts, etc.. The CLI is required for compiling the Noahh loader, and is extremely helpful for working with your own mods, as it automatically packages all the resources into a `.noahh` file and installs it to GD.
 
 ## Downloading CLI
 
-### Latest Release
+## Latest Release
 
-You can find the latest release of CLI on the [Release page on its repo](https://github.com/geode-sdk/cli).
+You can find the latest release of CLI on the [Release page on its repo](https://github.com/noahh-sdk/cli).
 
-### Building from source
+## Building from source
 
-You can build the CLI yourself using [Rust](https://doc.rust-lang.org/cargo/getting-started/installation.html). Clone the git repo using `git clone https://github.com/geode-sdk/cli` and then run `cargo build` to build it. If you encounter errors, [let us know through GitHub issues](https://github.com/geode-sdk/cli/issues).
+You can build the CLI yourself using [Rust](https://doc.rust-lang.org/cargo/getting-started/installation.html). Clone the git repo using `git clone https://github.com/noahh-sdk/cli` and then run `cargo build` to build it. If you encounter errors, [let us know through GitHub issues](https://github.com/noahh-sdk/cli/issues).
 
 ## Adding CLI to PATH (on Windows)
 
@@ -26,7 +26,7 @@ In order for the CLI to be accessible from anywhere on your computer, it needs t
 
 4. In the top `User variables` section, select the `Path` variable and click `Edit`
 
-5. Now click `New` and paste the path of the CLI executable you copied at Step 1. **Remove the `\geode.exe` from the end;** the path has to point to the _directory_ with Geode CLI, not the CLI itself.
+5. Now click `New` and paste the path of the CLI executable you copied at Step 1. **Remove the `\noahh.exe` from the end;** the path has to point to the _directory_ with Noahh CLI, not the CLI itself.
 
 6. Click OK to close the environment variable windows.
 
@@ -34,5 +34,5 @@ In order for the CLI to be accessible from anywhere on your computer, it needs t
 
 1. Open up Windows search and open `cmd` or `powershell`
 
-2. Type `geode` and hit Enter. If CLI was installed correctly, you should see the CLI help displaying its version and commands.
+2. Type `noahh` and hit Enter. If CLI was installed correctly, you should see the CLI help displaying its version and commands.
 
