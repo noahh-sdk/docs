@@ -8,45 +8,19 @@ description: Instructions for installing Noahh
 
 > :warning: Please note that Noahh is **incompatible with all other mod loaders and mods**. We're porting stuff like Mega Hack and BetterEdit over, but don't expect their old releases to work.
 
-## Using the installer
-
-The official Noahh installer is currently under heavy remodelling. It will be brought back here when it's ready :) For now, you will have to install the Noahh loader manually.
-
-### Manually (on Windows)
-
-1. Download [the latest release](https://github.com/noahh-sdk/noahh/releases/latest) (download the `noahh-vX.X.X-win` zip)
-
-2. Place the ZIP's contents to the root Geometry Dash directory (where `GeometryDash.exe` is)
-
-3. Open the game to make sure it works (if it doesn't, **whitelist the GD folder in your antivirus**)
-
-### Manually (on MacOS)
-
-1. Download [the latest release](https://github.com/noahh-sdk/noahh/releases/latest) (download the `noahh-vX.X.X-mac` zip)
-
-2. Rename `libfmod.dylib` inside `Contents/Frameworks` into `libfmod.dylib.original` if you ever need to uninstall Noahh
-
-3. Place the ZIP's contents to the `Contents/Frameworks` directory inside `Geometry Dash.app`
-
-4. Open the game to make sure it works (if it doesn't, **whitelist the GD folder in your antivirus**)
+Noahh is installed using **its own installer**. You can find the latest version [on the Noahh homepage](https://noahh-sdk.org) or [on GitHub](https://github.com/noahh-sdk/installer/releases/latest).
 
 # Installing Noahh SDK (for Developers)
-
-## Using the installer
-
-The official Noahh installer is currently under heavy remodelling. It will be brought back here when it's ready :) For now, you will have to install the SDK manually.
-
-## Using Noahh CLI
 
 ### Prerequisites
 
  * [CMake](https://cmake.org/download/) (minimum v3.13.4, prefer latest)
- * A supported C++ compiler ([clang](https://releases.llvm.org/)/[MSVC](https://visualstudio.microsoft.com/downloads/))
+ * A supported C++ compiler ([MSVC](https://visualstudio.microsoft.com/downloads/) for Windows, [clang](https://releases.llvm.org/) for MacOS)
  * [git](https://git-scm.com/downloads)
 
-1. Install [Noahh CLI](https://github.com/noahh-sdk/cli/releases/latest) [(Instructons)](/info/installcli.md)
+1. Install [Noahh CLI](https://github.com/noahh-sdk/cli/releases/latest) [(Instructions)](/info/installcli.md)
 
-  * Unzip the download file somewhere, and [add the directory with noahh.exe to your user's PATH variable](/info/installcli.md?id=adding-cli-to-path-on-windows). You may need to restart your command line after adding the directory to your path.
+  * Unzip the download file somewhere, and [add the directory with noahh.exe to your user's PATH variable](/info/installcli.md#adding-cli-to-path-on-windows). You may need to restart your command line after adding the directory to your path.
 
 2. [Install Noahh to GD](#installing-noahh-for-users)
 
@@ -61,4 +35,3 @@ The official Noahh installer is currently under heavy remodelling. It will be br
   * You can pick whether you want the `nightly` or `stable` branch of Noahh. `nightly` is the tip of the `main` branch, and contains all of the latest and greatest features but may also feature crashes and possibly not even compile, whereas `stable` is the latest released version. Use `noahh sdk update nightly` or `noahh sdk update stable` to switch between the two branches.
 
 6. All done :) See the [instructions for creating a mod](/info/creating.md).
-
