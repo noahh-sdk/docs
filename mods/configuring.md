@@ -88,7 +88,7 @@ The name of the mod's developer. Should be a single name, like "NoahBajsToa" or 
 
 ### `developers` 
 
-The name of the mod's developers. Replaces `developer`. Can be a single name, like \["HJfod"\] or \["Alk"\]. If the mod has multiple developers, you should list the names of each developer because, the `developers` property is a list/array. First developer listed is the main developer. If you have 3 or more developers listed, it will show `main developer + 2 more`. If you have 2 developers listed, it will show `Developer 1 & Developer 2`. If you list multiple developers, when someone clicks on your name(s), it will show the list of the developers, then you can click on one to see other mods they have made or are apart of.
+The name of the mod's developers. Replaces `developer`. Can be a single name, like \["NoahBajsToa"\] or \["Alk"\]. If the mod has multiple developers, you should list the names of each developer because, the `developers` property is a list/array. First developer listed is the main developer. If you have 3 or more developers listed, it will show `main developer + 2 more`. If you have 2 developers listed, it will show `Developer 1 & Developer 2`. If you list multiple developers, when someone clicks on your name(s), it will show the list of the developers, then you can click on one to see other mods they have made or are apart of.
 
 ### `description`
 
@@ -129,3 +129,27 @@ Specifies that this mod can be [used as a dependency](/mods/dependencies.md). Va
 ### `headers`
 
 An array specifying the list of headers that should bundled with this mod. Supports [globbing](/mods/resources.md).
+
+### `tags`
+
+A list of tags to categorize the mod. A mod can have any amount of tags, but between 1-4 is the recommended amount.
+
+| Tag name | Description |
+|----------|-------------|
+| `universal` | The mod affects the entire game |
+| `gameplay` | The mod affects mainly gameplay |
+| `editor` | The mod affects mainly the editor |
+| `offline` | The mod does not require an internet connection to work |
+| `online` | The mod requires an internet connection to work |
+| `enhancement` | The mod enhances (adds more) to an existing GD feature |
+| `music` | The mod deals with music, such as adding more songs |
+| `interface` | The mod modifies the GD UI in notable ways (beyond just adding a new button) |
+| `bugfix` | The mod fixes existing bugs in the game |
+| `utility` | The mod provides tools that simplify working with the game and its levels |
+| `performance` | The mod optimizes existing GD features |
+| `customization` | The mod adds new customization options to existing GD features |
+| `content` | The mod adds new content (new levels, gamemodes, etc.) |
+| `developer` | The mod is intended for mod developers only |
+| `cheats` | The mod adds cheats like noclip |
+| `paid` | The mod contains paid content, like a Pro tier, or if the mod acts as an installer for a fully paywalled mod |
+| `joke` | The mod is a joke. See [the docs](/mods/guidelines#joke-mods) for what joke mods are considered to be "meaningful" |
