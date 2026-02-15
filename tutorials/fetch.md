@@ -11,7 +11,7 @@ This is the easiest form of web request you can make. Want to fetch some simple 
 Example:
 
 ```cpp
-#include <Noahh/utils/fetch.hpp>
+#include <Noahh/utils/web.hpp>
 
 using namespace noahh::prelude;
 
@@ -35,7 +35,7 @@ Of course, you could just create an `std::thread` and call `fetch` inside that, 
 Creating an async web request is really simple:
 
 ```cpp
-#include <Noahh/utils/fetch.hpp>
+#include <Noahh/utils/web.hpp>
 
 using namespace noahh::prelude;
 web::AsyncWebRequest()
