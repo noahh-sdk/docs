@@ -14,7 +14,7 @@ See [What is Noahh](/whatisnoahh.md) for more detailed information about why you
 
 ## Help, Contributing, Etc.
 
-If you need help using Noahh or would like to contribute, feel free to join our [Discord Server](https://discord.gg/9e43WMKzhp).
+If you need help using Noahh or would like to contribute, feel free to join our [Discord Server](https://discord.gg/aKhJ7YyAk2).
 
 Alternatively, if you hate joining Discord servers to work with a framework, you can also just **open up an issue or pull request** on any [Noahh repository on Github](https://github.com/orgs/noahh-sdk/repositories).
 
@@ -24,7 +24,7 @@ See [Installation](/installation) for instructions on how to install the Noahh S
 
 See [Creating a new mod](/noahh/creating) for instructions on how to make your first mod.
 
-See [Building](/source/building) for instructions on how to build the Noahh Loader + SDK from scratch on your computer.
+See [Building](/source/building) for instructions on how to build Noahh itself from scratch on your computer.
 
 See [Handbook](/handbook/chap0) for a beginner-friendly tutorial series on using Noahh and GD Modding in general (WIP!!).
 
@@ -33,7 +33,7 @@ See [Handbook](/handbook/chap0) for a beginner-friendly tutorial series on using
 ### Contributors
 
 <a href="https://github.com/noahh-sdk/noahh/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=geode-sdk/geode" />
+  <img src="https://contrib.rocks/image?repo=Geode-sdk/geode" />
 </a>
 
 ### Libraries
