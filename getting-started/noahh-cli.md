@@ -13,17 +13,35 @@ The Noahh SDK has its own command line utility program to aid in many tasks invo
 * [Linux](#linux)
 
 ## Windows
-(Recommended) You can use [scoop](https://scoop.sh/) to easily install the cli by doing:
+
+### scoop
+You can use [scoop](https://scoop.sh/) to easily install the cli by doing:
 ```bash
-scoop install https://noahh-sdk.org/noahh-sdk-cli.json
+scoop bucket add extras
+scoop install noahh-sdk-cli
+```
+In the future you can easily update the cli by doing:
+```bash
+scoop update noahh-sdk-cli
 ```
 
 If you don't have scoop, you can follow the installation instructions on their page:
 [https://scoop.sh](https://scoop.sh)
 
+### winget
+We are also on [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/), so to install the cli you can do:
+```bash
+winget install NoahhSDK.NoahhCLI
+```
+In the future you can easily update the cli by doing:
+```bash
+winget upgrade NoahhSDK.NoahhCLI
+```
+
+
 ---
 
-Otherwise, you can manually install it by:
+(Not Recommended :c) Otherwise, you can manually install it by:
 1. Download the latest windows release over at [GitHub](https://github.com/noahh-sdk/cli/releases/latest)
 1. Extract the `noahh.exe` into some folder on your computer
 1. Select the CLI executable in File Explorer, Shift + Right-Click it and select `Copy as Path`
