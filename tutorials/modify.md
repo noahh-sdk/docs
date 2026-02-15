@@ -158,7 +158,7 @@ You might want to do this because your code may need to run before others ([Noah
 ```cpp
 class $modify(GJGarageLayer) {
     static void onModify(auto& self) {
-        self.setHookPriority("GJGarageLayer::init", 1024);
+        self.setHookPriorityPost("GJGarageLayer::init", Priority::Early);
     }
 
     bool init() {
