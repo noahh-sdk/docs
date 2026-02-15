@@ -2,6 +2,7 @@
 title: Installation
 icon: download
 description: Instructions for installing Noahh
+order: 0
 ---
 
 # Installing Noahh
