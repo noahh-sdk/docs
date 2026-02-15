@@ -1,11 +1,13 @@
 ---
-title: Mod description
-description: How to use about.md in a Noahh mod
+title: Special Markdown Files
+description: How to use about.md and other Markdown files in a Noahh mod
 ---
 
 # `about.md`
 
 Noahh mods can specify a long, free-form description typeset using Markdown by including a file named `about.md` at the root of their project. See [the MDTextArea class](/classes/noahh/MDTextArea) for information on what features of Markdown are supported.
+
+This file is similar to a README, however **it's intended for people who use the mod**; you should also keep a README for developers interested in building / contributing to your mod.
 
 ## Example
 
@@ -18,7 +20,7 @@ If you like this mod, please check [my other mod](mod:my.other-mod)!
 
 ## Credits
 
-[Join my Discord](https://discord.gg/K9Kuh3hzTC)! Thanks to [Hu Tao](https://www.youtube.com/watch?v=8oap-n_OEgc) for helping with the mod!
+[Join my Discord](https://discord.gg/aKhJ7YyAk2)! Thanks to [Hu Tao](https://www.youtube.com/watch?v=8oap-n_OEgc) for helping with the mod!
 ```
 
 # `changelog.md`
