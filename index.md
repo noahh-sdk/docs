@@ -20,11 +20,7 @@ Alternatively, if you hate joining Discord servers to work with a framework, you
 
 ## Getting Started
 
-See [Installation](/installation) for instructions on how to install the Noahh SDK on your computer.
-
-See [Creating a new mod](/noahh/creating) for instructions on how to make your first mod.
-
-See [Building](/source/building) for instructions on how to build Noahh itself from scratch on your computer.
+See [Getting Started](/getting-started) for a step by step tutorial on getting started with Noahh SDK.
 
 See [Handbook](/handbook/chap0) for a beginner-friendly tutorial series on using Noahh and GD Modding in general (WIP!!).
 
@@ -33,7 +29,7 @@ See [Handbook](/handbook/chap0) for a beginner-friendly tutorial series on using
 ### Contributors
 
 <a href="https://github.com/noahh-sdk/noahh/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=geode-sdk/geode" />
+  <img src="https://contrib.rocks/image?repo=Noahh-sdk/Noahh" />
 </a>
 
 ### Special Thanks

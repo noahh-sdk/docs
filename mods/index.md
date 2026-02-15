@@ -1,5 +1,6 @@
 ---
 description: A collection of tutorials for working with Noahh mods
+order: 3
 ---
 
 # Mods
