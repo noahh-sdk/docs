@@ -131,3 +131,51 @@ $execute {
     );
 }
 ```
+
+
+## Event Macro
+
+Included in [Noahh v4.3.0](https://github.com/noahh-sdk/noahh/releases/tag/v4.3.0) is a macro to automate the process of exporting functions from API mods, in a way that works for optional dependencies.
+
+This makes use of events to grab a function pointer from the API mod, and call it from the dependent mod, hence the name.
+The exported functions must return a `noahh::Result`, considering the API mod may not be available, and thus the function cannot be called.
+
+Two versions of the macro are available:
+```cpp
+// The event id will be determined from the function name and the macro MY_MOD_ID
+#define NOAHH_EVENT_EXPORT(functionPointer, callArguments)
+
+// When using this, make sure to prefix the event id with your mod's id, to avoid conflicts.
+// **Do not use features such as _spr here**, it will not work properly.
+#define NOAHH_EVENT_EXPORT_ID(functionPointer, callArguments, eventID)
+```
+
+### Example
+```cpp
+// (In your api distributed header file)
+// (such as include/api.hpp)
+#pragma once
+
+#include <Noahh/loader/Dispatch.hpp>
+// You must **manually** declare the mod id, as macros like NOAHH_MOD_ID will not
+// behave correctly to other mods using your api.
+#define MY_MOD_ID "dev.my-api"
+
+namespace api {
+    // Important: The function must be declared inline, and return a noahh::Result,
+    // as it can fail if the api is not available.
+    inline noahh::Result<int> addNumbers(int a, int b) NOAHH_EVENT_EXPORT(&addNumbers, (a, b));
+}
+```
+
+Then, in **one** of your source files, you must define the exported functions:
+
+```cpp
+// MUST be defined before including the header.
+#define NOAHH_DEFINE_EVENT_EXPORTS
+#include "../include/api.hpp"
+
+Result<int> api::addNumbers(int a, int b) {
+    return Ok(a + b);
+}
+```
