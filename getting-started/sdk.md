@@ -25,7 +25,7 @@ echo $NOAHH_SDK
 
 If that command prints out the path you installed the SDK to, then it has worked correctly.
 
-To develop mods, you should will need to either build Noahh from source, or just download the prebuilt binaries using this command:
+To develop mods, you will either need to build Noahh from source, or install prebuilt binaries using the following command:
 ```bash
 noahh sdk install-binaries
 ```
