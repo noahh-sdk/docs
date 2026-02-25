@@ -8,7 +8,7 @@ Class & function documentation is built automatically from [the Noahh source cod
 
 ## Building
 
-The docs are built using [Flash](https://github.com/nipfswd/flash). To build the docs, you need Flash, along with [CMake](https://cmake.org/install/) and [Clang](https://clang.llvm.org/).
+The docs are built using [Flash](https://github.com/noahh-sdk/flash). To build the docs, you need Flash, along with [CMake](https://cmake.org/install/) and [Clang](https://clang.llvm.org/).
 
 To build the docs, you first need to clone Noahh, and then clone the docs inside the Noahh root, for a folder structure like this:
 
