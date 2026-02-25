@@ -152,5 +152,5 @@ This will make the popup show correctly by adding it as a child to the new `Menu
 
 ## Examples
 
- * [`ModSettingsPopup` in Noahh, which uses `Popup`](https://github.com/noahh-sdk/noahh/blob/main/loader/src/ui/internal/settings/ModSettingsPopup.hpp)
- * [Use of `createQuickPopup` within it](https://github.com/noahh-sdk/noahh/blob/main/loader/src/ui/internal/settings/ModSettingsPopup.cpp#L139-L151)
+ * [`ModSettingsPopup` in Noahh, which uses `Popup`](https://github.com/noahh-sdk/noahh/blob/v4.10.0/loader/src/ui/mods/settings/ModSettingsPopup.hpp)
+ * [Use of `createQuickPopup` within it](https://github.com/noahh-sdk/noahh/blob/v4.10.0/loader/src/ui/mods/settings/ModSettingsPopup.cpp#L224-L236)
