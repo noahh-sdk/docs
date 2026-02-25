@@ -262,8 +262,10 @@ The default value for file settings support a set of known path prefixes to allo
 |----------|------|
 | `{gd_dir}` | The main Geometry Dash directory (which contains `GeometryDash.exe` on Windows) |
 | `{gd_save_dir}` | The Geometry Dash save directory |
+| `{gd_resources_dir}` | The Geometry Dash resources directory |
 | `{mod_config_dir}` | The Noahh-provided config directory for this mod |
 | `{mod_save_dir}` | The save directory for this mod |
+| `{mod_resources_dir}` | The resources directory for this mod |
 | `{temp_dir}` | The Noahh directory for temporary files |
 
 > :warning: Note that there is an alternative name for this type - `path` - however, **the `path` type has been deprecated**. Use either the `file` or `folder` type.
