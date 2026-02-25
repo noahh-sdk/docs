@@ -13,8 +13,11 @@ noahh sdk install
 ```
 This *should* set the `NOAHH_SDK` enviroment variable, which can you test after restarting your terminal:
 ```bash
-# On windows
+# On Windows CMD
 echo %NOAHH_SDK%
+
+# On Windows PowerShell
+echo $env:NOAHH_SDK
 
 # Elsewhere
 echo $NOAHH_SDK
