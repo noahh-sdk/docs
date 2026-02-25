@@ -4,13 +4,11 @@ on:
   workflow_dispatch:
   push:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -19,52 +17,53 @@ jobs:
   deploy:
     name: Docs
     runs-on: windows-2025
-    steps:
 
-      # Clone Noahh repo
+    steps:
+      # Checkout Noahh repo
       - name: Checkout Noahh repo
         uses: actions/checkout@v4
         with:
-          repository: 'noahh-sdk/noahh'
-          path: 'noahh'
+          repository: noahh-sdk/noahh
+          path: noahh
 
+      # Checkout docs repo
       - name: Checkout docs repo
         uses: actions/checkout@v4
         with:
-          path: 'noahh/docs'
-      
+          path: docs
+
       - name: Setup Ninja
         uses: seanmiddleditch/gha-setup-ninja@master
-      
+
+      # Download Flash into workspace root
       - name: Download Flash
         uses: robinraju/release-downloader@v1.5
         with:
           repository: noahh-sdk/flash
           latest: true
-          fileName: "flash.exe"
-          tarBall: false
-          zipBall: false
-          out-file-path: "" 
+          fileName: flash.exe
+          out-file-path: .
 
-      - name: Create dist directory
-        run: |
-          mkdir dist
-
+      # Debug: confirm flash.exe exists
       - name: Locate flash.exe
         run: |
           echo "Searching for flash.exe..."
-          Get-ChildItem -Path . -Recurse -Filter flash.exe | Select-Object FullName
-      
+          Get-ChildItem -Path $env:GITHUB_WORKSPACE -Recurse -Filter flash.exe | Select-Object FullName
+
+      - name: Create dist directory
+        run: mkdir dist
+
+      # Build docs using absolute paths
       - name: Build docs with Flash
         run: |
           cd dist
-          ..\flash.exe -i ..\noahh -o .
+          & "$env:GITHUB_WORKSPACE\flash.exe" -i "$env:GITHUB_WORKSPACE\noahh" -o .
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
-        
+          path: dist
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
