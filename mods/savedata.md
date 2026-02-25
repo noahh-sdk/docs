@@ -23,15 +23,14 @@ struct MyCustomSaveData {
 
 template<>
 struct matjson::Serialize<MyCustomSaveData> {
-    static MyCustomSaveData from_json(matjson::Value const& value) {
-        return MyCustomSaveData {
-            .x = value["x"].as_int(),
-            .y = value["y"].as_int()
-        };
+    static Result<MyCustomSaveData> fromJson(matjson::Value const& value) {
+        NOAHH_UNWRAP_INTO(int x, value["x"].asInt());
+        NOAHH_UNWRAP_INTO(int y, value["y"].asInt());
+        return Ok(MyCustomSaveData{x, y});
     }
 
-    static matjson::Value to_json(MyCustomSaveData const& value) {
-        auto obj = matjson::Object();
+    static matjson::Value toJson(MyCustomSaveData const& value) {
+        auto obj = matjson::Value();
         obj["x"] = value.x;
         obj["y"] = value.y;
         return obj;
