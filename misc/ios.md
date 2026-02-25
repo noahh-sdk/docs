@@ -18,6 +18,27 @@ else()
 endif()
 ```
 
+## Build
+
+To build mods for iOS, you must have Mac OS with the iPhone SDK installed from Xcode.
+
+You must also get the Noahh binaries for iOS, you can do this using the CLI:
+```bash
+noahh sdk update nightly
+noahh sdk install-binaries --platform ios
+```
+
+Nightly is required, as iOS is currently not on the stable release for Noahh.
+
+Now you can build your mod for iOS via:
+```bash
+noahh build -p ios
+```
+Or if you want to build manually:
+```bash
+cmake -B build -DCMAKE_SYSTEM_NAME=iOS -DNOAHH_TARGET_PLATFORM=iOS -DCMAKE_BUILD_TYPE=RelWithDebInfo -G Ninja
+cmake --build build
+```
 
 ## Github Actions
 To build your mod for iOS using `noahh-sdk/build-noahh-mod`, you have to add iOS to the build matrix, like so:
