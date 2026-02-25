@@ -50,16 +50,16 @@ jobs:
         run: |
           mkdir dist
 
-      - name: Build docs with Flash
-        run: |
-          cd dist
-          ..\flash.exe -i ..\noahh -o .
-
       - name: Locate flash.exe
         run: |
           echo "Searching for flash.exe..."
           Get-ChildItem -Path . -Recurse -Filter flash.exe | Select-Object FullName
       
+      - name: Build docs with Flash
+        run: |
+          cd dist
+          ..\flash.exe -i ..\noahh -o .
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
